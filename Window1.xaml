@@ -1,0 +1,44 @@
+﻿<Window x:Class="Project_IS.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_IS"
+        mc:Ignorable="d"
+        Title="Registration" Height="488.571" Width="462.5">
+    <Grid Background="#FFCADBFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Регистрация" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="40" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Логин" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="130" Grid.ColumnSpan="2" FontSize="27"  Grid.Row="2" Grid.Column="1" FontFamily="Times New Roman" />
+        <TextBox x:Name="register_login" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="32" Grid.Row="2" Text="Введите логин" TextAlignment="Center" TextBlock.FontSize="25" VerticalAlignment="Center" Width="190" Grid.Column="3" SelectionBrush="#FF008EFF" BorderBrush="Black" FontFamily="Times New Roman" Background="White" FontSize="25" Foreground="#FF929292" GotFocus="register_login_GotFocus" LostFocus="register_login_LostFocus" />
+        <Label Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="130" Grid.ColumnSpan="2" FontSize="27"  Grid.Row="3" Grid.Column="1" FontFamily="Times New Roman" />
+        <TextBox x:Name="register_password" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="32" Grid.Row="3" Text="Введите пароль" TextAlignment="Center" TextBlock.FontSize="20" VerticalAlignment="Center" Width="190" Grid.Column="3" SelectionBrush="#FF008EFF" BorderBrush="Black" FontFamily="Times New Roman" Background="White" FontSize="25" Foreground="#BF5F5F5F" GotFocus="register_password_GotFocus" LostFocus="register_password_LostFocus" />
+        <Label Content="Имя" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="130" Grid.ColumnSpan="2" FontSize="27"  Grid.Row="4" Grid.Column="1" FontFamily="Times New Roman" />
+        <TextBox x:Name="register_name" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="32" Grid.Row="4" Text="Введите имя" TextAlignment="Center" TextBlock.FontSize="20" VerticalAlignment="Center" Width="190" Grid.Column="3" SelectionBrush="#FF008EFF" BorderBrush="Black" FontFamily="Times New Roman" Background="White" FontSize="25" Foreground="#BF5F5F5F" GotFocus="register_name_GotFocus" LostFocus="register_name_LostFocus" />
+        <Label Content="Фамилия" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="130" Grid.ColumnSpan="2" FontSize="27"  Grid.Row="5" Grid.Column="1" FontFamily="Times New Roman" />
+        <TextBox x:Name="register_surname" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="32" Grid.Row="5" Text="Введите фамилию" TextAlignment="Center" TextBlock.FontSize="20" VerticalAlignment="Center" Width="190" Grid.Column="3" SelectionBrush="#FF008EFF" BorderBrush="Black" FontFamily="Times New Roman" Background="White" FontSize="23" Foreground="#BF5F5F5F" GotFocus="register_surname_GotFocus" LostFocus="register_surname_LostFocus" />
+        <Label Content="Отчество" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="130" Grid.ColumnSpan="2" FontSize="27"  Grid.Row="6" Grid.Column="1" FontFamily="Times New Roman" />
+        <TextBox x:Name="register_fname" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="32" Grid.Row="6" Text="Введите отчество" TextAlignment="Center" TextBlock.FontSize="20" VerticalAlignment="Center" Width="190" Grid.Column="3" SelectionBrush="#FF008EFF" BorderBrush="Black" FontFamily="Times New Roman" Background="White" FontSize="24" Foreground="#BF5F5F5F" GotFocus="register_fname_GotFocus" LostFocus="register_fname_LostFocus" />
+        <Button x:Name="enter" Content="Зарегистрироваться" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Bottom" Width="180" Grid.ColumnSpan="3" Height="42" Foreground="Black" BorderBrush="#FF5D5D5D" Background="#FFE4E4E4" FontFamily="Times New Roman" FontSize="20" Margin="0,0,0,36" Grid.RowSpan="2" Click="enter_Click" />
+        <Button x:Name="back_button" Content="Назад" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Bottom" Width="110" Grid.ColumnSpan="2" Height="42" Foreground="Black" BorderBrush="#FF5D5D5D" Background="#FFE4E4E4" FontFamily="Times New Roman" FontSize="20" Margin="0,0,0,36" Grid.RowSpan="2" Click="back_button_Click" />
+    </Grid>
+</Window>

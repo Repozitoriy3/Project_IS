@@ -1,0 +1,26 @@
+﻿<Window x:Class="Project_IS.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_IS"
+        mc:Ignorable="d"
+        Title="Window2" Height="517.623" Width="940.164" Background="#FFCADBFF" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel x:Name="StackPanel1" HorizontalAlignment="Left" Height="473" Margin="10,4,0,0" VerticalAlignment="Top" Width="234">
+            <Button x:Name="t_1" Content="Lesson 1" Height="50" BorderBrush="#FFCADBFF" Background="#FFCADBFF" Foreground="Black" FontSize="20" FontFamily="Segoe Print" Click="t_1_Click" Width="230"/>
+            <Button x:Name="t_2" Content="Lesson 2" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_2_Click"/>
+            <Button x:Name="t_3" Content="Lesson 3" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_3_Click"/>
+            <Button x:Name="t_4" Content="Lesson 4" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_4_Click"/>
+            <Button x:Name="t_5" Content="Lesson 5" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_5_Click"/>
+            <Button x:Name="t_6" Content="Lesson 6" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_6_Click"/>
+            <Button x:Name="t_7" Content="Lesson 7" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_7_Click"/>
+            <Button x:Name="t_8" Content="Lesson 8" Height="50" Background="#FFCADBFF" Foreground="Black" BorderBrush="#FFCADBFF" FontSize="20" FontFamily="Segoe Print" Width="230" Click="t_8_Click"/>
+            <Button x:Name="test_button" Content="Пройти тест" Height="61" HorizontalAlignment="Center" Width="209" Background="#FFBEC6FF" BorderBrush="Black" Foreground="Black" FontFamily="Segoe Print" FontWeight="Bold" FontSize="20" Visibility="Hidden"/>
+        </StackPanel>
+        <ScrollViewer HorizontalAlignment="Left" Height="441" Margin="249,40,0,0" VerticalAlignment="Top" Width="673">
+            <TextBlock x:Name="lesson" TextWrapping="Wrap" Width="654" Height="437"/>
+        </ScrollViewer>
+        <ProgressBar x:Name="_progress_1" Grid.Row="0" Height="30" Margin="253,3,13,454" Value="0" Foreground="#FF697EFF" BorderBrush="#FF697EFF"/>
+    </Grid>
+</Window>
